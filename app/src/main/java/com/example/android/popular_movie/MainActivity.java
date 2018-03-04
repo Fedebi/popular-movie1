@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
     private MovieAdapter mMovieAdapter;
     private TextView mErrorMessageDisplay;
     private ProgressBar mLoadingIndicator;
-
     private String mOrderBy;
 
     @Override
