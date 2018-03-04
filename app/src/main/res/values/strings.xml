@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Popular Movie</string>
+    <string name="most_popular">Most Popular</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="popular">popular</string>
+    <string name="topRated">top_rated</string>
+
+    <string name="movie_detail">movie_detail</string>
+
+    <!-- Content descriptions-->
+    <string name="movie_image_content_description">Movie poster</string>
+
+    <!-- Label for movie details activity-->
+    <string name="movie_label_title">"Title"</string>
+    <string name="movie_label_rate">"Rate"</string>
+    <string name="movie_label_date">"Date"</string>
+    <string name="movie_label_synopsis">Synopsis</string>
+
+    <!-- Json params -->
+    <string name="movie_uri_base">http://image.tmdb.org/t/p/w185</string>
+
+
+    <!-- Error messages-->
+    <string name="detail_error_message">Movie details not available</string>
+    <string name="error_message">An error has occurred. Please try again by clicking "Most Popular", or "Top Rated"</string>
+</resources>
