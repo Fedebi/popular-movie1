@@ -3,8 +3,6 @@ package com.example.android.popular_movie.utilities;
 import android.net.Uri;
 import android.util.Log;
 
-import com.example.android.popular_movie.BuildConfig;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
@@ -20,6 +18,7 @@ import java.util.Scanner;
 public final class NetworkUtils {
 
     private static final String TAG = NetworkUtils.class.getSimpleName();
+    private static String my_api_key = "";
 
     /**
      * Builds the URL used to talk to the server.
@@ -32,8 +31,6 @@ public final class NetworkUtils {
 
         String movie_base_url ="http://api.themoviedb.org/3/movie";
         String api_key = "api_key";
-
-        String my_api_key = BuildConfig.API_KEY;
 
         Uri builtUri = Uri.parse(movie_base_url).buildUpon()
                 .appendPath(orderBy)
