@@ -20,6 +20,7 @@ public final class NetworkUtils {
     private static final String TAG = NetworkUtils.class.getSimpleName();
     private static String my_api_key = "";
 
+
     /**
      * Builds the URL used to talk to the server.
      *
