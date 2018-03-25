@@ -3,8 +3,9 @@ package com.example.android.popular_movie;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class MovieDetail implements Parcelable{
+public class MovieDetail implements Parcelable {
 
+    private String movie_id;
     private String poster_path;
     private String original_title;
     private String overview;
@@ -12,17 +13,20 @@ public class MovieDetail implements Parcelable{
     private String release_date;
 
 
-    public MovieDetail(String poster_path,String original_title,String overview, String vote_average, String release_date){
+    public MovieDetail(String movie_id, String poster_path, String original_title, String overview, String vote_average, String release_date) {
 
-        this.poster_path = poster_path ;
-        this.original_title=original_title;
-        this.overview=overview;
-        this.vote_average=vote_average;
-        this.release_date=release_date;
+        this.movie_id = movie_id;
+        this.poster_path = poster_path;
+        this.original_title = original_title;
+        this.overview = overview;
+        this.vote_average = vote_average;
+        this.release_date = release_date;
     }
 
 
-    public String getPoster_path() {return poster_path;}
+    public String getPoster_path() {
+        return poster_path;
+    }
 
     public String getOriginal_title() {
         return original_title;
@@ -40,6 +44,9 @@ public class MovieDetail implements Parcelable{
         return vote_average;
     }
 
+    public String getMovie_id() {
+        return movie_id;
+    }
 
     public void setPoster_path(String poster_path) {
         this.poster_path = poster_path;
@@ -61,8 +68,12 @@ public class MovieDetail implements Parcelable{
         this.vote_average = vote_average;
     }
 
+    public void setMovie_id(String movie_id) {
+        this.movie_id = movie_id;
+    }
 
     public MovieDetail(Parcel in) {
+        movie_id = in.readString();
         poster_path = in.readString();
         original_title = in.readString();
         overview = in.readString();
@@ -77,6 +88,7 @@ public class MovieDetail implements Parcelable{
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(movie_id);
         dest.writeString(poster_path);
         dest.writeString(original_title);
         dest.writeString(overview);
