@@ -2,9 +2,10 @@
     <string name="app_name">Popular Movie</string>
     <string name="most_popular">Most Popular</string>
     <string name="top_rated">Top Rated</string>
+    <string name="favorite">Favorite</string>
     <string name="popular">popular</string>
     <string name="topRated">top_rated</string>
-
+    <string name="favorite_choice">favorite</string>
     <string name="movie_detail">movie_detail</string>
 
     <!-- Content descriptions-->
@@ -15,12 +16,20 @@
     <string name="movie_label_rate">"Rate"</string>
     <string name="movie_label_date">"Date"</string>
     <string name="movie_label_synopsis">Synopsis</string>
+    <string name="movie_label_trailers">Trailers</string>
+    <string name="movie_label_reviews">Reviews</string>
+    <string name="movie_button_favorite">Mark as favorite</string>
+    <string name="movie_button_remove_favorite">Remove from favorite</string>
 
     <!-- Json params -->
-    <string name="movie_uri_base">http://image.tmdb.org/t/p/w185</string>
-
+    <string name="trailers">trailers</string>
+    <string name="reviews">reviews</string>
+    <string name="lifecicle_callBack">lifecicle_callback</string>
 
     <!-- Error messages-->
     <string name="detail_error_message">Movie details not available</string>
-    <string name="error_message">An error has occurred. Please try again by clicking "Most Popular", or "Top Rated"</string>
+    <string name="error_message">An error has occurred. Please try again by clicking "Most Popular", "Top Rated" or "Favorite"</string>
+    <string name="list_favorite_empty">The list of favorite is empty.</string>
+
+
 </resources>
