@@ -11,4 +11,8 @@
         android:id="@+id/action_topRated"
         android:orderInCategory="2"
         android:title="@string/top_rated" />
+    <item
+        android:id="@+id/action_favorite"
+        android:orderInCategory="3"
+        android:title="@string/favorite" />
 </menu>
